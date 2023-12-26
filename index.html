@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Joe Website</title>
+    <link rel="shortcut icon" href="img/Me.jpg" type="x-icon" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/dark-mode.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="Youtube-Header">
+      <div class="left-section">
+        <div class="imageContainer">
+          <img class="MoreImg" src="img/Play List.png" />
+        </div>
+        <div class="youtubeLogoContainer">
+          <img class="YouTube-Logo" src="img/YouTube-Logo.wine.svg" />
+        </div>
+        <div class="darkmodeContainer">
+          <input id="darkModeToggle" type="checkbox" />
+          <label for="darkModeToggle"></label>
+        </div>
+      </div>
+      <div class="middle-section">
+        <input class="Search-Bar" type="text" placeholder="Search" />
+        <button class="Search-Btn" type="button">
+          <img class="Search-Img" src="img/Search.png" />
+          <div class="Tool-Tip">Search</div>
+        </button>
+        <button class="Audio-Btn" type="button">
+          <img class="Audio-Img" src="img/Dic.png" />
+          <div class="Tool-Tip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="uploadIconContainer">
+          <img class="UploadImg" src="img/Play.png" />
+          <div class="Tool-Tip">Create</div>
+        </div>
+        <div class="SurrenderIconContainer">
+          <img class="SubcriptionsImg" src="img/Subscriptions.png" />
+          <div class="Tool-Tip">Surrender</div>
+        </div>
+        <div class="Notification-Container">
+          <img class="NotificationImg" src="img/Notification_Off.png" />
+          <div class="Tool-Tip">Notifications</div>
+          <div class="NotificationCount">3</div>
+        </div>
+        <img class="Me" src="img/Me.jpg" />
+      </div>
+    </header>
+
+    <nav class="Side-Bar">
+      <div class="Sidebar-link">
+        <img src="img/Home.png" />
+        <div>Home</div>
+      </div>
+      <div class="Sidebar-link">
+        <img src="img/Explore.png" />
+        <div>Explore</div>
+      </div>
+      <div class="Sidebar-link">
+        <img src="img/Shorts.png" />
+        <div>Shorts</div>
+      </div>
+      <div class="Sidebar-link">
+        <img src="img/SubscriptionToTheChannel.png" />
+        <div>Subscription</div>
+      </div>
+      <div class="Sidebar-link">
+        <img src="img/Library.png" />
+        <div>Library</div>
+      </div>
+      <div class="Sidebar-link">
+        <img src="img/History.png" />
+        <div>History</div>
+      </div>
+      <div class="Sidebar-link">
+        <img src="img/Watch Later.png" />
+        <div>Watch Later</div>
+      </div>
+      <div class="Sidebar-link">
+        <img src="img/Liked.png" />
+        <div>Liked Videos</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="Video-Grid">
+        <div class="Video-Preview">
+          <div class="Thumbnail-row">
+            <img class="Thumbnail" src="img/Traitor.jpg" />
+            <div class="time">12:34</div>
+          </div>
+          <div class="Video-Info-Grid">
+            <div class="Author">
+              <img class="Author-Img" src="img/Me.jpg" />
+            </div>
+            <div class="Video-Info">
+              <p class="Title">
+                Lorem ipsum dolor and AI with Google CEO Joseph Alforque!
+              </p>
+              <p class="Author-Name">Joseph Alforque</p>
+              <p class="Video-Stats">1.1M views &#183; 11 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="Video-Preview">
+          <div class="Thumbnail-row">
+            <img class="Thumbnail" src="img/thumbnail3.webp" />
+            <div class="time">20:23</div>
+          </div>
+          <div class="Video-Info-Grid">
+            <div class="Author">
+              <img class="Author-Img" src="img/2.jpg" />
+            </div>
+            <div class="Video-Info">
+              <p class="Title">
+                THE TRUTH ABOUT HEALTHCARE AND OFWs OF JAPAN (日本の医療の真実)!
+              </p>
+              <p class="Author-Name">Doc Alvin</p>
+              <p class="Video-Stats">295K view &#183; 4 days ago</p>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=13011s"
+          target="_blank"
+        >
+          <div class="Video-Preview">
+            <div class="Thumbnail-row">
+              <img class="Thumbnail" src="img/thumbnail2.webp" />
+              <div class="time">16:24</div>
+            </div>
+            <div class="Video-Info-Grid">
+              <div class="Author">
+                <img class="Author-Img" src="img/3.jpg" />
+              </div>
+              <div class="Video-Info">
+                <p class="Title">HTML & CSS Full Course - Beginner to Pro</p>
+                <p class="Author-Name">SuperSimpleDev</p>
+                <p class="Video-Stats">7.8M views &#183; 1 year ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class="Video-Preview">
+          <div class="Thumbnail-row">
+            <img class="Thumbnail" src="img/thumbnail1.webp" />
+            <div class="time">16:30</div>
+          </div>
+          <div class="Video-Info-Grid">
+            <div class="Author">
+              <img class="Author-Img" src="img/rap.jpg" />
+            </div>
+            <div class="Video-Info">
+              <p class="Title">Hanggang Kailan | Orange and Lemons | Cover</p>
+              <p class="Author-Name">Raphiel Shannon</p>
+              <p class="Video-Stats">5.7M views &#183; 4 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="Video-Preview">
+          <div class="Thumbnail-row">
+            <img class="Thumbnail" src="img/thumbnail4.webp" />
+            <div class="time">26:19</div>
+          </div>
+          <div class="Video-Info-Grid">
+            <div class="Author">
+              <img class="Author-Img" src="img/4.jpg" />
+            </div>
+            <div class="Video-Info">
+              <p class="Title">
+                Ancient Islands: Ghost City of the Pacific (Full Episode) | Lost
+                Cities with Albert Lin
+              </p>
+              <p class="Author-Name">National Geographic</p>
+              <p class="Video-Stats">1.7M views &#183; 2 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="Video-Preview">
+          <div class="Thumbnail-row">
+            <img class="Thumbnail" src="img/thumbnail5.webp" />
+            <div class="time">12:51</div>
+          </div>
+          <div class="Video-Info-Grid">
+            <div class="Author">
+              <img class="Author-Img" src="img/5.jpg" />
+            </div>
+            <div class="Video-Info">
+              <p class="Title">
+                Lorem ipsum dolor and AI with Google CEO Joseph Alforque!
+              </p>
+              <p class="Author-Name">Joseph Alforque</p>
+              <p class="Video-Stats">1.1M views &#183; 11 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="Video-Preview">
+          <div class="Thumbnail-row">
+            <img class="Thumbnail" src="img/7.JPG" />
+            <div class="time">99:99</div>
+          </div>
+          <div class="Video-Info-Grid">
+            <div class="Author">
+              <img class="Author-Img" src="img/11.jpg" />
+            </div>
+            <div class="Video-Info">
+              <p class="Title">
+                Pinakapogi abcdefghijklmnopqrstuvwxyz JosephAlforque!
+              </p>
+              <p class="Author-Name">Joseph Alforque</p>
+              <p class="Video-Stats">1.1M views &#183; 11 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="Video-Preview">
+          <div class="Thumbnail-row">
+            <img class="Thumbnail" src="img/6.JPG" />
+            <div class="time">77:77</div>
+          </div>
+          <div class="Video-Info-Grid">
+            <div class="Author">
+              <img class="Author-Img" src="img/12.jpg" />
+            </div>
+            <div class="Video-Info">
+              <p class="Title">
+                Pinakapogi abcdefghijklmnopqrstuvwxyz BALOLONG GAMING!
+              </p>
+              <p class="Author-Name">Joseph Alforque</p>
+              <p class="Video-Stats">1.1M views &#183; 11 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="Video-Preview">
+          <div class="Thumbnail-row">
+            <img class="Thumbnail" src="img/6.JPG" />
+            <div class="time">77:77</div>
+          </div>
+          <div class="Video-Info-Grid">
+            <div class="Author">
+              <img class="Author-Img" src="img/12.jpg" />
+            </div>
+            <div class="Video-Info">
+              <p class="Title">
+                Pinakapogi BALOLONG GAMING BALOLONG GAMING BALOLONG GAMING!
+              </p>
+              <p class="Author-Name">Joseph Alforque</p>
+              <p class="Video-Stats">1.1M views &#183; 11 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="Video-Preview">
+          <div class="Thumbnail-row">
+            <img class="Thumbnail" src="img/6.JPG" />
+            <div class="time">77:77</div>
+          </div>
+          <div class="Video-Info-Grid">
+            <div class="Author">
+              <img class="Author-Img" src="img/12.jpg" />
+            </div>
+            <div class="Video-Info">
+              <p class="Title">
+                Pinakapogi BALOLONG GAMING BALOLONG GAMING BALOLONG GAMING!
+              </p>
+              <p class="Author-Name">Joseph Alforque</p>
+              <p class="Video-Stats">1.1M views &#183; 11 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="Video-Preview">
+          <div class="Thumbnail-row">
+            <img class="Thumbnail" src="img/6.JPG" />
+            <div class="time">77:77</div>
+          </div>
+          <div class="Video-Info-Grid">
+            <div class="Author">
+              <img class="Author-Img" src="img/12.jpg" />
+            </div>
+            <div class="Video-Info">
+              <p class="Title">
+                Pinakapogi BALOLONG GAMING BALOLONG GAMING BALOLONG GAMING!
+              </p>
+              <p class="Author-Name">Joseph Alforque</p>
+              <p class="Video-Stats">1.1M views &#183; 11 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="Video-Preview">
+          <div class="Thumbnail-row">
+            <img class="Thumbnail" src="img/6.JPG" />
+            <div class="time">77:77</div>
+          </div>
+          <div class="Video-Info-Grid">
+            <div class="Author">
+              <img class="Author-Img" src="img/12.jpg" />
+            </div>
+            <div class="Video-Info">
+              <p class="Title">
+                Pinakapogi BALOLONG GAMING BALOLONG GAMING BALOLONG GAMING!
+              </p>
+              <p class="Author-Name">Joseph Alforque</p>
+              <p class="Video-Stats">1.1M views &#183; 11 months ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="scripts/dark mode.js" defer></script>
+  </body>
+</html>
