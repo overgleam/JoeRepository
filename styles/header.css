@@ -17,13 +17,14 @@
   right: 0;
   z-index: 100;
 
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .left-section {
   display: flex;
   align-items: center;
 }
+
 .middle-section {
   flex: 1;
   margin-left: 0px;
@@ -31,6 +32,7 @@
   display: flex;
   align-items: center;
 }
+
 .right-section {
   display: flex;
   align-items: center;
@@ -50,7 +52,12 @@
   height: 16px;
 }
 
-.YouTube-Logo {
+.youtubeLogoContainer {
+  position: relative;
+  display: flex;
+}
+
+.youtubeLogoContainer .YouTube-Logo {
   height: 79px;
   width: 130px;
   cursor: pointer;
@@ -67,7 +74,7 @@
   border-top-left-radius: 18px;
   border-bottom-left-radius: 18px;
   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
-  width: 0;
+  width: 10px;
 
   transition: 0.3s ease;
 }
@@ -88,7 +95,7 @@
   border-color: rgb(192, 192, 192);
   background-color: rgb(240, 240, 240);
 
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .Audio-Btn {
@@ -99,7 +106,7 @@
   border: none;
   position: relative;
 
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .Search-Img {
@@ -201,9 +208,4 @@
 .SurrenderIconContainer:hover .Tool-Tip,
 .Notification-Container:hover .Tool-Tip {
   opacity: 1;
-}
-
-.youtubeLogoContainer {
-  position: relative;
-  display: flex;
 }

@@ -1,133 +1,142 @@
 .darkmodeContainer {
-    
-    position: relative;
-    width: 60px;
-    height: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  width: 60px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-label {
-    display: block;
-    position: relative;
-    width: 50px;
-    height: 22px;
-    border-radius: 15px;
-    background-color: rgb(248, 248, 248);
-    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.10),inset -1px -1px 5px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: 0.3s;
+.darkmodeContainer label {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 22px;
+  border-radius: 15px;
+  background-color: rgb(248, 248, 248);
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.1),
+    inset -1px -1px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
 }
-label:after{
-    content: "";
-    width: 16px;
-    height: 16px;
-    background: linear-gradient(120deg,	#F9D81A,rgb(255, 186, 82));   
-    border-radius: 8px;
-    top: 3px;
-    left: 3px;
-    position: absolute;
-    box-shadow: inset 0px 0px 2px rgba(0, 0, 0,0.15);
-    transition: 0.3s;
-
+.darkmodeContainer label:after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(120deg, #f9d81a, rgb(255, 186, 82));
+  border-radius: 8px;
+  top: 3px;
+  left: 3px;
+  position: absolute;
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
 }
 
-label:active:after{
-    width: 20px;
+.darkmodeContainer label:active:after {
+  width: 20px;
 }
 
 #darkModeToggle {
-    height: 0;
-    width: 0;
-    visibility: hidden;
-    position: absolute;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  position: absolute;
 }
 
 #darkModeToggle:checked + label:after {
-    left: 46px;
-    transform: translateX(-100%);
-    background: linear-gradient(180deg,#777,#3a3a3a);   
-    box-shadow: inset 6px -2px rgb(207, 206, 206);
+  left: 46px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+  box-shadow: inset 6px -2px rgb(207, 206, 206);
 }
 
 #darkModeToggle:checked + label {
-    background-color: black;
-    box-shadow: inset 0px 0px 5px rgba(255, 255, 255,0.4);
+  background-color: black;
+  box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.4);
 }
 
 body.dark-mode {
-    background-color: rgb(34, 34, 34); /* Dark background color for Youtube-Header */
-    border-color: rgb(52, 52, 52); /* Dark border color for Youtube-Header */
-    color: white; /* Light text color for Search-Bar */
-    box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.05); /* Dark box shadow for Youtube-Header */
+  background-color: rgb(34, 34, 3);
+  border-color: rgb(52, 52, 52);
+  color: white;
+  box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode a:visited {
+  color: white;
 }
 
 body.dark-mode .Youtube-Header {
-    background-color: rgb(34, 34, 34); /* Dark background color for Youtube-Header */
-    border-color: rgb(52, 52, 52); /* Dark border color for Youtube-Header */
-    box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.05); /* Dark box shadow for Youtube-Header */
-
-    /* Add other dark mode styles for Youtube-Header */
+  background-color: rgb(34, 34, 34);
+  border-color: rgb(52, 52, 52);
+  box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.05);
 }
 
-/* Add other dark mode styles for other elements inside Youtube-Header */
 body.dark-mode .Search-Bar {
-    border-color: rgb(92, 92, 92); /* Dark border color for Search-Bar */
-    background-color: rgb(34, 34, 34); /* Dark background color for Search-Bar */
-    color: white; /* Light text color for Search-Bar */
+  border-color: rgb(92, 92, 92);
+  background-color: rgb(34, 34, 34);
+  color: white;
 }
 
 body.dark-mode .Search-Bar::placeholder {
-    color: rgb(144, 144, 144); /* Dark placeholder color for Search-Bar */
+  color: rgb(144, 144, 144);
 }
 
-
-body.dark-mode .Search-Btn{
-    background-color: rgb(34, 34, 34); /* Dark background color for buttons and images */
-    border-color: rgb(92, 92, 92); /* Dark border color for buttons and images */
+body.dark-mode .Search-Btn {
+  background-color: rgb(34, 34, 34);
+  border-color: rgb(92, 92, 92);
 }
 
-body.dark-mode .Audio-Btn{
-    background-color: rgb(65, 65, 65); /* Dark background color for buttons and images */
-    border-color: rgb(92, 92, 92); /* Dark border color for buttons and images */
+body.dark-mode .Audio-Btn {
+  background-color: rgb(65, 65, 65);
+  border-color: rgb(92, 92, 92);
 }
 
-body.dark-mode .Search-Btn img, body.dark-mode .Audio-Btn img
-, body.dark-mode .NotificationImg
-, body.dark-mode .UploadImg
-, body.dark-mode .SubcriptionsImg
-, body.dark-mode .MoreImg
-, body.dark-mode .YouTube-Logo {
-   filter: invert(1);
+body.dark-mode .Search-Btn img,
+body.dark-mode .Audio-Btn img,
+body.dark-mode .NotificationImg,
+body.dark-mode .UploadImg,
+body.dark-mode .SubcriptionsImg,
+body.dark-mode .MoreImg,
+body.dark-mode .YouTube-Logo {
+  filter: invert(1);
+  transition: 0.3s;
+}
+
+body.dark-mode .uploadIconContainer:hover,
+body.dark-mode .SurrenderIconContainer:hover,
+body.dark-mode .Notification-Container:hover,
+body.dark-mode .imageContainer:hover {
+  background-color: rgb(54, 54, 54);
 }
 
 body.dark-mode .Tool-Tip {
-    background-color: rgba(255, 255, 255, 0.8); /* Light background color for tooltips */
-    color: black; /* Dark text color for tooltips */
+  background-color: rgba(255 255, 255, 0.8);
+  color: black;
 }
 
 body.dark-mode .Side-Bar {
-    background-color: rgb(34, 34, 34); /* Dark background color for Side-Bar */
+  background-color: rgb(34, 34, 34);
 }
 
 body.dark-mode .Sidebar-link {
-    border-bottom: 1px solid rgb(52, 52, 52); /* Dark border color for Sidebar-link */
+  border-bottom: 1px solid rgb(52, 52, 52);
+  transition: 0.3s;
 }
 
 body.dark-mode .Sidebar-link:last-child {
-    border-bottom: none; /* Remove border for the last Sidebar-link in dark mode */
+  border-bottom: none;
 }
 
 body.dark-mode .Sidebar-link:hover {
-    background-color: rgb(92, 92, 92); /* Dark background color for Sidebar-link on hover */
-    border-radius: 12px;
+  background-color: rgb(92, 92, 92);
+  border-radius: 12px;
 }
 
 body.dark-mode .Sidebar-link img {
-    filter: invert(1); /* Invert the colors for images in Sidebar-link */
+  filter: invert(1);
 }
 
 body.dark-mode .Sidebar-link div {
-    color: white; /* Light text color for text in Sidebar-link */
+  color: white;
 }
