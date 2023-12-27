@@ -14,6 +14,14 @@ p {
     margin-bottom: 0;
 }
 
+a {
+    color : white;
+    transition: color 5s;
+}
+a:visited {
+    color : black;
+}
+
 
 
  /* Set width and color for the track */
