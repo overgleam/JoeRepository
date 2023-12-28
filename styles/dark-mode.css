@@ -56,7 +56,7 @@
 }
 
 body.dark-mode {
-  background-color: rgb(34, 34, 3);
+  background-color: rgb(34, 34, 34);
   border-color: rgb(52, 52, 52);
   color: white;
   box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.05);
